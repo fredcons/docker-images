@@ -3,12 +3,12 @@
 . settings.sh
 
 for SCALA_VERSION in ${SCALA_VERSIONS}; do
-    docker push confluent/platform-${SCALA_VERSION}
+    docker push fredcons/confluent-platform-${SCALA_VERSION}
 done
-docker push confluent/platform
+docker push fredcons/confluent-platform
 
-docker push confluent/zookeeper
-docker push confluent/kafka
-docker push confluent/schema-registry
-docker push confluent/rest-proxy
-docker push confluent/tools
+docker push fredcons/zookeeper
+docker push fredcons/kafka
+docker push fredcons/schema-registry
+docker push fredcons/rest-proxy
+docker push fredcons/tools
