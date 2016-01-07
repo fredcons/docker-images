@@ -7,8 +7,8 @@ for SCALA_VERSION in ${SCALA_VERSIONS}; do
 done
 docker push fredcons/confluent-platform
 
-docker push fredcons/zookeeper
-docker push fredcons/kafka
-docker push fredcons/schema-registry
-docker push fredcons/rest-proxy
-docker push fredcons/tools
+docker push fredcons/confluent-zookeeper
+docker push fredcons/confluent-kafka
+docker push fredcons/confluent-schema-registry
+docker push fredcons/confluent-rest-proxy
+docker push fredcons/confluent-tools

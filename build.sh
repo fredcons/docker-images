@@ -15,9 +15,9 @@ for SCALA_VERSION in ${SCALA_VERSIONS}; do
     done
 done
 
-docker build -t fredcons/zookeeper zookeeper/
-docker build -t fredcons/kafka kafka/
-docker build -t fredcons/schema-registry schema-registry/
-docker build -t fredcons/rest-proxy rest-proxy/
-docker build -t fredcons/tools tools/
+docker build -t fredcons/confluent-zookeeper zookeeper/
+docker build -t fredcons/confluent-kafka kafka/
+docker build -t fredcons/confluent-schema-registry schema-registry/
+docker build -t fredcons/confluent-rest-proxy rest-proxy/
+docker build -t fredcons/confluent-tools tools/
 
